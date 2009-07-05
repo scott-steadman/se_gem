@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name                  = 'se_gem'
-  s.version               = '0.0.1'
+  s.version               = '0.0.2'
   s.summary               = 'A collection of useful scripts.'
   s.required_ruby_version = '>= 1.8.6'
 
