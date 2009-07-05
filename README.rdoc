@@ -1,0 +1,7 @@
+= se_gem
+
+A collection of handy scripts.
+
+== Copyright
+
+Copyright (c) 2009 Scott Steadman. See LICENSE for details.

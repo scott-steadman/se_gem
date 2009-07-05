@@ -1,4 +1,6 @@
 *.gem
-*.swp
-rdoc
+*.sw?
+.DS_Store
 coverage
+rdoc
+pkg
