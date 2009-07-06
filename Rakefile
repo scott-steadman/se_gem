@@ -9,6 +9,7 @@ begin
     gem.email = 'ss@stdmn.com'
     gem.homepage = 'http://github.com/ss/se_gem'
     gem.authors = ['Scott Steadman']
+    gem.files = Dir['lib/**/*.rb']
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 

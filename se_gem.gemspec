@@ -13,25 +13,16 @@ Gem::Specification.new do |s|
      "README.rdoc"
   ]
   s.files = [
-    ".document",
-     ".gitignore",
-     "LICENSE",
-     "README.rdoc",
-     "Rakefile",
-     "VERSION",
-     "lib/core_ext.rb",
+    "lib/core_ext.rb",
      "lib/debug.rb",
      "lib/se/core_ext/array.rb",
      "lib/se/core_ext/dir.rb",
      "lib/se/core_ext/meta_class.rb",
      "lib/se/core_ext/object.rb",
      "lib/se/debug/debug.rb",
+     "lib/se/test/difference.rb",
      "lib/se_gem.rb",
-     "se_gem.gemspec",
-     "test/se/core_ext/array_test.rb",
-     "test/se/core_ext/dir_test.rb",
-     "test/se/core_ext/object_test.rb",
-     "test/se/debug/debug_test.rb"
+     "lib/test.rb"
   ]
   s.homepage = %q{http://github.com/ss/se_gem}
   s.rdoc_options = ["--charset=UTF-8"]
