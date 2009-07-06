@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
      "lib/core_ext.rb",
      "lib/debug.rb",
      "lib/se/core_ext/array.rb",
