@@ -8,7 +8,7 @@ class DebugTest < Test::Unit::TestCase
     assert_match "RuntimeError includes: []\n", result
     assert_match "extends: StandardError includes: []\n", result
     assert_match "extends: Exception includes: []\n", result
-    assert_match /extends: Object includes: \[(CoreExtensions::Object,)?Kernel\]/, result
+    assert_match /extends: Object includes: \[(SE::CoreExtensions::Object::InstanceMethods,)?Kernel\]/, result
   end
 
 end
