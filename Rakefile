@@ -4,16 +4,16 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "se_gem"
-    gem.summary = %Q{TODO}
-    gem.email = "ss@stdmn.com"
-    gem.homepage = "http://github.com/ss/se_gem"
-    gem.authors = ["Scott Steadman"]
+    gem.name = 'se_gem'
+    gem.summary = 'A collection of handy scripts.'
+    gem.email = 'ss@stdmn.com'
+    gem.homepage = 'http://github.com/ss/se_gem'
+    gem.authors = ['Scott Steadman']
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
 rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
+  puts 'Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler'
 end
 
 require 'rake/testtask'
@@ -32,7 +32,7 @@ begin
   end
 rescue LoadError
   task :rcov do
-    abort "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
+    abort 'RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov'
   end
 end
 
@@ -45,7 +45,7 @@ Rake::RDocTask.new do |rdoc|
     config = YAML.load(File.read('VERSION.yml'))
     version = "#{config[:major]}.#{config[:minor]}.#{config[:patch]}"
   else
-    version = ""
+    version = ''
   end
 
   rdoc.rdoc_dir = 'rdoc'
