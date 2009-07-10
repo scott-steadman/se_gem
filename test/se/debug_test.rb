@@ -1,5 +1,5 @@
 require 'test/unit'
-require "#{File.dirname(__FILE__)}/../../../lib/se/debug/debug"
+require "#{File.dirname(__FILE__)}/../../lib/se/debug"
 
 class DebugTest < Test::Unit::TestCase
 
