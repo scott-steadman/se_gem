@@ -3,18 +3,21 @@
 # Takes an object as a parameter and will invert the return values of all its
 # methods.
 #
-class Negator
-  def initialize(object)
-    @object = object
-  end
 
-  def method_missing(symbol, *args)
-    !@object.send(symbol, *args)
+module SE
+  class Negator
+    def initialize(object)
+      @object = object
+    end
+
+    def method_missing(symbol, *args)
+      !@object.send(symbol, *args)
+    end
   end
 end
 
 class Object
   def not
-    Negator.new(self)
+    SE::Negator.new(self)
   end
 end
