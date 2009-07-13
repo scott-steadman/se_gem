@@ -43,10 +43,11 @@ class SleeperTest < Test::Unit::TestCase
   end
 
   def test_signals_kills_sleeper_threads
+    count = Thread.list.size
     Sleeper::OLD_HANDLERS.keys.each do |sig|
       5.times {Sleeper.new(30)}
       Process.kill(sig, $$)
-      assert_equal 1, Thread.list.size, 'too many threads left'
+      assert_equal count, Thread.list.size, 'too many threads left'
     end
   end
 
