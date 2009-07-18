@@ -2,19 +2,18 @@
 
 Gem::Specification.new do |s|
   s.name = %q{se_gem}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Scott Steadman"]
-  s.date = %q{2009-07-12}
+  s.date = %q{2009-07-18}
   s.email = %q{ss@stdmn.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
   ]
   s.files = [
-    "lib/core_ext.rb",
-     "lib/debug.rb",
+    "lib/debug.rb",
      "lib/se/aspect.rb",
      "lib/se/core_ext/array.rb",
      "lib/se/core_ext/benchmark.rb",
