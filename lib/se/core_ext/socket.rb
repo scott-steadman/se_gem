@@ -1,4 +1,4 @@
-
+require 'socket'
 
 # from http://coderrr.wordpress.com/2008/05/28/get-your-local-ip-address/
 #

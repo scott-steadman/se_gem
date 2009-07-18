@@ -1,4 +1,4 @@
-
+require 'yaml'
 
 #
 # Read a file, run it through ERB, then YAML::load.
