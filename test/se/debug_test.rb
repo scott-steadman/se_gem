@@ -5,10 +5,10 @@ class DebugTest < Test::Unit::TestCase
 
   def test_class_hierarchy
     result = SE::Debug.class_hierarchy(RuntimeError)
-    assert_match "RuntimeError includes: []\n", result
-    assert_match "extends: StandardError includes: []\n", result
-    assert_match "extends: Exception includes: []\n", result
-    assert_match /extends: Object includes: \[(SE::CoreExtensions::Object::InstanceMethods,)?Kernel\]/, result
+    puts result
+    assert_match "RuntimeError\n includes:\n  Kernel\n", result
+    assert_match "extends:\n  Kernel\n", result
+    assert_match "superclass: StandardError\n", result
   end
 
 end
